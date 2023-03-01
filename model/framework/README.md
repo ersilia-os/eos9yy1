@@ -36,7 +36,7 @@ Note: Ensure that the Docker service is running.
 1. Open your Anaconda terminal
 2. Create environment
     ```
-    conda create -n <name-of-env> python=3.7
+    conda create -n <name-of-env> python=3.8
     ```
     - Wait for the envitonment to be created
 3. Type `conda activate <name-of-env>` and hit Enter
