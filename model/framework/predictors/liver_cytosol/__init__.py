@@ -47,7 +47,11 @@ def load_models():
                 hlc_models_dict[f'model_{model_number}'] = pickle.load(pkl_file)
         else:
             os.makedirs(f'../../checkpoints', exist_ok=True)
-            hlc_models_dict[f'model_{model_number}'] = download_file(base_url, model_number, hlc_models_dict)
+            hlc_models_dict[f'model_{model_number}'] = download_file(
+                base_url, 
+                model_number, 
+                hlc_models_dict
+            )
 
     print(f'Finished loading human liver cytosol stability models', file=sys.stdout)
     return hlc_models_dict
