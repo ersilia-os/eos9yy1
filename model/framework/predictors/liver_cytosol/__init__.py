@@ -1,3 +1,5 @@
+# rewrite this code to not use requests or request library
+
 import pickle
 import requests
 import sys
@@ -33,8 +35,9 @@ def download_file(base_url, model_number, models_dict):
     return hlc_rf_model
 
 def load_models():
-    base_url = os.path.abspath(os.path.join(root, '../../checkpoints'))
     # base_url = 'https://opendata.ncats.nih.gov/public/adme/models/current/static/liver_cytosol/'
+    base_url = 'file://' + os.path.abspath(os.path.join(root, '../../checkpoints'))
+    
     print(f'Loading human liver cytosol stability random forest models', file=sys.stdout)
 
     hlc_models_dict = {}
