@@ -1,7 +1,4 @@
-# rewrite this code to not use requests or request library
-
 import pickle
-import requests
 import sys
 import os
 import warnings
@@ -11,12 +8,14 @@ from tqdm import tqdm
 from io import BytesIO
 from os import path
 
+import requests
+
 root = os.path.dirname(os.path.abspath(__file__))
 sys.path.append(os.path.join(root, ".."))
 
 
 def download_file(base_url, model_number, models_dict):
-    hlc_rf_pkl_url = f'{base_url}/model_{model_number}.pkl'
+    hlc_rf_pkl_url = f'file://{base_url}/model_{model_number}.pkl'
     hlc_model_path = f'../../checkpoints/model_{model_number}.pkl'
     hlc_rf_pkl_file_request = requests.get(hlc_rf_pkl_url)
     with tqdm.wrapattr(
@@ -34,10 +33,9 @@ def download_file(base_url, model_number, models_dict):
     hlc_rf_model = pickle.load(BytesIO(hlc_rf_pkl_file_request.content))
     return hlc_rf_model
 
+
 def load_models():
-    # base_url = 'https://opendata.ncats.nih.gov/public/adme/models/current/static/liver_cytosol/'
-    base_url = 'file://' + os.path.abspath(os.path.join(root, '../../checkpoints'))
-    
+    base_url = os.path.abspath(os.path.join(root, '../../checkpoints'))
     print(f'Loading human liver cytosol stability random forest models', file=sys.stdout)
 
     hlc_models_dict = {}
@@ -53,5 +51,6 @@ def load_models():
 
     print(f'Finished loading human liver cytosol stability models', file=sys.stdout)
     return hlc_models_dict
+
 
 hlc_models_dict = load_models()
