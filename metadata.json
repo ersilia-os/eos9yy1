@@ -1,22 +1,22 @@
 {
     "Identifier": "eos9yy1",
-    "Slug": "ncats-hlcs",
+    "Slug": "human-liver-cytosolic-stability",
     "Status": "In progress",
     "Title": "Human Liver Cytosolic Stability",
-    "Description": "The human liver cytosol stability model is used for predicting the stability of a drug in the cytosol of human liver cells, which is beneficial for identifying potential drug candidates early during the drug discovery process.",
-    "Mode": "",
-    "Task": [],
-    "Input": [],
-    "Input Shape": "",
-    "Output": [],
-    "Output Type": [],
-    "Output Shape": "",
-    "Interpretation": "",
+    "Description": "The human liver cytosol stability model is used for predicting the stability of a drug in the cytosol of human liver cells, which is beneficial for identifying potential drug candidates early during the drug discovery process. If a drug compound is quickly absorbed, it may not reach the intended target in the body or become toxic. On the other hand, if a drug compound is too stable, it could accumulate and cause detrimental effects.",
+    "Mode": "Pretrained",
+    "Task": ["Classification"],
+    "Input": ["Compound"],
+    "Input Shape": "Single",
+    "Output": ["Probability"],
+    "Output Type": ["Float"],
+    "Output Shape": "Single",
+    "Interpretation": "The human liver cytosol stability model measures the probability of a given compound being stable or unstable. A predicted class of 1 indicates that the compound has poor stability (>0.5: Unstable), and a predicted class of 0 indicates the probability of a compound being stable (<0.5: Stable)",
     "Tag": [
         "ADME",
         "Metabolism"
     ],
     "Publication": "https://jcheminf.biomedcentral.com/articles/10.1186/s13321-020-00426-7",
-    "Source Code": "https://github.com/ncats/ncats-adme/tree/development",
+    "Source Code": "https://github.com/ncats/ncats-adme",
     "License": "None"
 }
