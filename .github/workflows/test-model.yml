@@ -35,7 +35,7 @@ jobs:
           python --version
           echo "After conda init"
           conda init
-          python -m pip install git+https://github.com/ersilia-os/ersilia.git@e05626afb39b7c9f8d50e5f327f90ab9245acc26
+          python -m pip install git+https://github.com/ersilia-os/ersilia.git
   
       - name: Update metadata to AirTable
         id: update-metadata-to-airtable
