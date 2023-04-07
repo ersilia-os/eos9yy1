@@ -90,6 +90,8 @@ class LCPredictor:
                 'unstable', 
                 'stable'
                 )))
+        proba1_df = pd.DataFrame()
+        proba1_df["hlcs_proba1"] = pd.Series(np.asarray(avg_pred_probs).round(3))
 
         # empyting the raw df
         self.raw_predictions_df = pd.DataFrame(None)
@@ -114,7 +116,7 @@ class LCPredictor:
         end = time.time()
         print(f'HLC: {end - start} seconds to predict {len(self.raw_predictions_df.index)} molecules')
 
-        return self.predictions_df
+        return proba1_df
 
     def _error_callback(self, error):
         print(error)
