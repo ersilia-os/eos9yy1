@@ -116,7 +116,7 @@ class LCPredictor:
         end = time.time()
         print(f'HLC: {end - start} seconds to predict {len(self.raw_predictions_df.index)} molecules')
 
-        return proba1_df
+        return proba1_df.values.reshape(-1)
 
     def _error_callback(self, error):
         print(error)
