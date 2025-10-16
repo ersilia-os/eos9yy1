@@ -2,8 +2,7 @@
 
 The human liver cytosol stability model is used for predicting the stability of a drug in the cytosol of human liver cells, which is beneficial for identifying potential drug candidates early during the drug discovery process. If a drug compound is quickly absorbed, it may not reach the intended target in the body or become toxic. On the other hand, if a drug compound is too stable, it could accumulate and cause detrimental effects. The authors use an NCATS dataset of 1450 compounds screened in vitro in mouse and human cytosol fractions. Compounds were classified as stable (half-life > 30min) or unstable (half-life ≤ 30 min). Note that authors report the dataset was biased towards stable compounds. The validation set of 250 compounds is openly available.
 
-This model was incorporated on 2023-03-01.
-
+This model was incorporated on 2023-03-01.Last packaged on 2025-10-16.
 
 ## Information
 ### Identifiers
@@ -42,12 +41,12 @@ Below are the **Output Columns** of the model:
 ### Resource Consumption
 - **Model Size (Mb):** `92`
 - **Environment Size (Mb):** `2461`
-- **Image Size (Mb):** `2526.83`
+- **Image Size (Mb):** `2609.19`
 
 **Computational Performance (seconds):**
-- 10 inputs: `33.49`
-- 100 inputs: `23.35`
-- 10000 inputs: `404.46`
+- 10 inputs: `28.64`
+- 100 inputs: `18.32`
+- 10000 inputs: `95.88`
 
 ### References
 - **Source Code**: [https://github.com/ncats/ncats-adme](https://github.com/ncats/ncats-adme)
