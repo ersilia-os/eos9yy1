@@ -1,6 +1,6 @@
 # Human Liver Cytosolic Stability
 
-The human liver cytosol stability model is used for predicting the stability of a drug in the cytosol of human liver cells, which is beneficial for identifying potential drug candidates early during the drug discovery process. If a drug compound is quickly absorbed, it may not reach the intended target in the body or become toxic. On the other hand, if a drug compound is too stable, it could accumulate and cause detrimental effects. The authors use an NCATS dataset of 1450 compounds screened in vitro in mouse and human cytosol fractions. Compounds were classified as stable (half-life > 30min) or unstable (half-life ≤ 30 min). Note that authors report the dataset was biased towards stable compounds. The validation set of 250 compounds is openly available.
+This model predicts the stability of a compound in the cytosol of human liver cells, an ADME property relevant for prioritising candidates early in drug discovery: compounds metabolised too quickly may never reach their target, while overly stable ones can accumulate and cause adverse effects. It was trained on an NCATS dataset of 1450 compounds screened in vitro in mouse and human cytosol fractions, classified as stable (half-life > 30 min) or unstable (half-life ≤ 30 min). The authors note the dataset is biased towards stable compounds.
 
 This model was incorporated on 2023-03-01.Last packaged on 2025-10-16.
 
@@ -14,7 +14,7 @@ This model was incorporated on 2023-03-01.Last packaged on 2025-10-16.
 - **Subtask:** `Activity prediction`
 - **Biomedical Area:** `ADMET`
 - **Target Organism:** `Homo sapiens`
-- **Tags:** `ADME`, `Metabolism`, `Human`, `Half-life`
+- **Tags:** `ADME`, `Metabolism`, `Half-life`
 
 ### Input
 - **Input:** `Compound`
