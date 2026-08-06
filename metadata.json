@@ -1,7 +1,7 @@
 {
     "Identifier": "eos9yy1",
     "Slug": "ncats-hlcs",
-    "Status": "In maintenance",
+    "Status": "Ready",
     "Title": "Human Liver Cytosolic Stability",
     "Description": "This model predicts the stability of a compound in the cytosol of human liver cells, an ADME property relevant for prioritising candidates early in drug discovery: compounds metabolised too quickly may never reach their target, while overly stable ones can accumulate and cause adverse effects. It was trained on an NCATS dataset of 1450 compounds screened in vitro in mouse and human cytosol fractions, classified as stable (half-life > 30 min) or unstable (half-life \u2264 30 min). The authors note the dataset is biased towards stable compounds.",
     "Deployment": [
@@ -39,7 +39,7 @@
     "License": "None",
     "Contributor": "pauline-banye",
     "Incorporation Date": "2023-03-01",
-    "Last Packaging Date": "2025-10-16",
+    "Last Packaging Date": "2026-08-06",
     "Release": "v1.0.0",
     "S3": "https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos9yy1.zip",
     "DockerHub": "https://hub.docker.com/r/ersiliaos/eos9yy1",
@@ -49,10 +49,10 @@
     ],
     "Model Size": 92.0,
     "Environment Size": 2443.0,
-    "Image Size": 2609.19,
-    "Computational Performance 1": 28.64,
-    "Computational Performance 2": 18.36,
-    "Computational Performance 3": 18.32,
-    "Computational Performance 4": 32.26,
-    "Computational Performance 5": 95.88
+    "Image Size": 2625.95,
+    "Computational Performance 1": 25.87,
+    "Computational Performance 2": 15.72,
+    "Computational Performance 3": 15.79,
+    "Computational Performance 4": 28.83,
+    "Computational Performance 5": 88.33
 }
