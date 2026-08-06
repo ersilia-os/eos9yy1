@@ -2,7 +2,7 @@
 
 This model predicts the stability of a compound in the cytosol of human liver cells, an ADME property relevant for prioritising candidates early in drug discovery: compounds metabolised too quickly may never reach their target, while overly stable ones can accumulate and cause adverse effects. It was trained on an NCATS dataset of 1450 compounds screened in vitro in mouse and human cytosol fractions, classified as stable (half-life > 30 min) or unstable (half-life ≤ 30 min). The authors note the dataset is biased towards stable compounds.
 
-This model was incorporated on 2023-03-01.Last packaged on 2025-10-16.
+This model was incorporated on 2023-03-01.Last packaged on 2026-08-06.
 
 ## Information
 ### Identifiers
@@ -41,12 +41,12 @@ Below are the **Output Columns** of the model:
 ### Resource Consumption
 - **Model Size (Mb):** `92`
 - **Environment Size (Mb):** `2443`
-- **Image Size (Mb):** `2609.19`
+- **Image Size (Mb):** `2625.95`
 
 **Computational Performance (seconds):**
-- 10 inputs: `28.64`
-- 100 inputs: `18.32`
-- 10000 inputs: `95.88`
+- 10 inputs: `25.87`
+- 100 inputs: `15.79`
+- 10000 inputs: `88.33`
 
 ### References
 - **Source Code**: [https://github.com/ncats/ncats-adme](https://github.com/ncats/ncats-adme)
