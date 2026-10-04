@@ -1,6 +1,6 @@
 # Human Liver Cytosolic Stability
 
-This model predicts the stability of a compound in the cytosol of human liver cells, an ADME property relevant for prioritising candidates early in drug discovery: compounds metabolised too quickly may never reach their target, while overly stable ones can accumulate and cause adverse effects. It was trained on an NCATS dataset of 1450 compounds screened in vitro in mouse and human cytosol fractions, classified as stable (half-life > 30 min) or unstable (half-life ≤ 30 min). The authors note the dataset is biased towards stable compounds.
+Estimates susceptibility to metabolism by enzymes in the liver cytosol, a route often overlooked because routine screening uses microsomal fractions instead. Shah and co-workers screened 1,450 compounds in human and mouse cytosol, measured in vitro half-lives, and combined matched molecular pair analysis with QSAR modelling to derive transformation rules; selected rules were then tested prospectively on a diverse library. Their datasets were released publicly, and the work is described as the first systematic in silico treatment of this liability.
 
 This model was incorporated on 2023-03-01.Last packaged on 2026-08-06.
 
@@ -23,7 +23,7 @@ This model was incorporated on 2023-03-01.Last packaged on 2026-08-06.
 ### Output
 - **Output Dimension:** `1`
 - **Output Consistency:** `Fixed`
-- **Interpretation:** Probability of a compound being unstable (half-life ≤ 30min) due to liver cells metabolism
+- **Interpretation:** Probability that a compound is unstable in human liver cytosol, with instability set at a half-life under 30 minutes.
 
 Below are the **Output Columns** of the model:
 | Name | Type | Direction | Description |
