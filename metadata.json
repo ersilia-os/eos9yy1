@@ -3,7 +3,7 @@
     "Slug": "ncats-hlcs",
     "Status": "Ready",
     "Title": "Human Liver Cytosolic Stability",
-    "Description": "Estimates susceptibility to metabolism by enzymes in the liver cytosol, a route often overlooked because routine screening uses microsomal fractions instead. Shah and co-workers screened 1,450 compounds in human and mouse cytosol, measured in vitro half-lives, and combined matched molecular pair analysis with QSAR modelling to derive transformation rules; selected rules were then tested prospectively on a diverse library. Their datasets were released publicly, and the work is described as the first systematic in silico treatment of this liability.",
+    "Description": "Estimates susceptibility to metabolism by enzymes in the liver cytosol, a route often overlooked because routine screening uses microsomal fractions instead. Shah and co-workers screened 1,450 compounds in human and mouse cytosol, treating a half-life at or below 30 minutes as unstable, and combined matched molecular pair analysis with QSAR modelling to derive transformation rules that were then tested experimentally on 125 compound pairs. The training set is skewed towards stable compounds, and accuracy fell sharply on an external library lying outside its applicability domain.",
     "Deployment": [
         "Local"
     ],
@@ -20,7 +20,7 @@
     ],
     "Output Dimension": 1,
     "Output Consistency": "Fixed",
-    "Interpretation": "Probability that a compound is unstable in human liver cytosol, with instability set at a half-life under 30 minutes.",
+    "Interpretation": "Probability of rapid turnover in human liver cytosol, with unstable meaning a half-life at or below 30 minutes.",
     "Tag": [
         "ADME",
         "Metabolism",
