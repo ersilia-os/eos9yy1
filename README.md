@@ -2,7 +2,8 @@
 
 Estimates susceptibility to metabolism by enzymes in the liver cytosol, a route often overlooked because routine screening uses microsomal fractions instead. Shah and co-workers screened 1,450 compounds in human and mouse cytosol, treating a half-life at or below 30 minutes as unstable, and combined matched molecular pair analysis with QSAR modelling to derive transformation rules that were then tested experimentally on 125 compound pairs. The training set is skewed towards stable compounds, and accuracy fell sharply on an external library lying outside its applicability domain.
 
-This model was incorporated on 2023-03-01.Last packaged on 2026-08-06.
+This model was incorporated on 2023-03-01.
+Last packaged on 2026-08-06.
 
 ## Information
 ### Identifiers
@@ -37,6 +38,7 @@ Below are the **Output Columns** of the model:
 - **DockerHub**: [https://hub.docker.com/r/ersiliaos/eos9yy1](https://hub.docker.com/r/ersiliaos/eos9yy1)
 - **Docker Architecture:** `AMD64`, `ARM64`
 - **S3 Storage**: [https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos9yy1.zip](https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos9yy1.zip)
+- **Apptainer**: [https://models-sif.s3.eu-north-1.amazonaws.com/eos9yy1_v1.sif](https://models-sif.s3.eu-north-1.amazonaws.com/eos9yy1_v1.sif)
 
 ### Resource Consumption
 - **Model Size (Mb):** `92`
